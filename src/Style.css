@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.first{
+    width: 500px;
+}
+.second{
+    width: 50px;
+}
+.invoice{
+  margin-bottom: 200px;
+}
+.bill{
+    background-color: black;
+   border: 1px solid black; 
+   
+}
+h4{
+    color: white;
+}
+
+.products{
+    background-color: black;
+    border: 1px solid black;    
+}
+.office{
+    background-color: black;
+    border: 1px solid black;    
+}
+
+.tax{
+    background-color: black;
+    border: 1px solid black;    
+}
+.productdata{
+    border: 1px solid black;
+    padding: 1px;
+    background-color: whitesmoke;
+    margin-left: 22px;
+  
+}
+.taxdata{
+    border: 1px solid whitesmoke;
+    padding: 1px;
+    background-color:whitesmoke;
+    margin-left: 22px;
+}
+.totaltax{
+    border: 1px solid black;
+    padding: 1px;
+    background-color:black;
+    margin-left: 22px;
+}
+
+.totalfont{
+    font-size: 18px;
+    color: white;
+    margin-bottom: 1px;
+}
+.paymentdetails{
+    margin-left: 22px; 
+}
+.Addproduct{
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.addbutton{
+    margin-left: 17px;  
+    width: 120px;
+}
+.buttonclass{
+    margin-left: 17px;  
+}
+
+.InvoiceHeading{
+    text-align: center;
+    color: cornflowerblue;
+    border: 1px,solid,whitesmoke;
+}
+/* .invoicepage{
+    background: whitesmoke;
+} */
+.addstyle{
+margin-bottom:12px ;
+}
