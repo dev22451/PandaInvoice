@@ -5,7 +5,7 @@ import Products from './Products'
 import { db } from './firebase'
 const InvoiceForm = () => {
     return (
-        <div className="row">
+        <div >
             <Products />
         </div>
     )

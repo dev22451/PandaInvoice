@@ -6,10 +6,11 @@ import { db } from './firebase'
 import Addresss from './Address';
 const HomePage = () => {
     return (
-        <div className="row signuppage">
-            <Addresss />
-            {/* <Products /> */}
-
+        <div className="container">
+            <div className="row signuppage">
+                <Addresss />
+                {/* <Products /> */}
+            </div>
         </div>
 
 
