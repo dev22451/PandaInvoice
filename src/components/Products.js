@@ -118,8 +118,10 @@ const Products = () => {
     const removeProduct = (index) => {
         // remove an index from array of object javascript
         const newData = { ...invoiceData }
-        newData.products.splice(index, 1)
-        setInvoiceData(newData)
+        if (index !== 0) {
+            newData.products.splice(index, 1)
+            setInvoiceData(newData)
+        }
     }
 
     // const handleChange = (e, index) => {

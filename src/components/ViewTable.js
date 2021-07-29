@@ -120,20 +120,25 @@ function ViewTable() {
                             </tr>
                         </thead>
                         <tbody>
-                            {console.log(invoiceDataList)}
+                            {/* {console.log(invoiceDataList.invoiceData)} */}
                             {
                                 invoiceDataList.map((s, index) => {
                                     return (
-                                        // console.log(s.invoiceData.products[{ ...productName }]),
-                                        // console.log(s.productName),
-                                        <tr key={index}>
-                                            <td>{s.invoiceData.products[index].productName}</td>
-                                            <td>{s.invoiceData.products[index].productQuantity}</td>
-                                            <td>{s.invoiceData.products[index].productPrice}</td>
-                                            <td>{s.invoiceData.products[index].discount}</td>
-                                            <td>{s.invoiceData.products[index].discountAmt}</td>
-                                            <td>{s.invoiceData.products[index].totalPrice}</td>
-                                        </tr>
+                                        s.invoiceData.products.map((a) => {
+                                            return (
+                                                console.log(a.productName),
+                                                <tr key={index}>
+                                                    <td>{a.productName}</td>
+                                                    <td>{a.productQuantity}</td>
+                                                    <td>{a.productPrice}</td>
+                                                    <td>{a.discount}</td>
+                                                    <td>{a.discountAmt}</td>
+                                                    <td>{a.totalPrice}</td>
+                                                </tr>
+                                            )
+                                        }
+                                        )
+
                                     )
                                 })}
                         </tbody>
