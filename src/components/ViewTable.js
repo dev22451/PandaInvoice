@@ -142,22 +142,6 @@ function ViewTable() {
                                     )
                                 })}
                         </tbody>
-                        {/* <tbody>
-                            {
-                                invoiceDataList.map((s, index) => {
-                                    return (
-                                        <tr key={index}>
-                                            <td>{s.invoiceData.products[1].productName}</td>
-                                            <td>{s.invoiceData.products[1].productQuantity}</td>
-                                            <td>{s.invoiceData.products[1].productPrice}</td>
-                                            <td>{s.invoiceData.products[1].discount}</td>
-                                            <td>{s.invoiceData.products[1].discountAmt}</td>
-                                            <td>{s.invoiceData.products[1].totalPrice}</td>
-                                        </tr>
-                                    )
-                                }
-                                )}
-                        </tbody> */}
                     </table>
                 </div>
             </div>
