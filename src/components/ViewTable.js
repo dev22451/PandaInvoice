@@ -1,53 +1,21 @@
 import React, { useEffect, useState } from 'react'
 import { db } from "./firebase"
-import PhoneIcon from '@material-ui/icons/Phone';
-import axios from "axios";
-import PlaceIcon from '@material-ui/icons/Place';
-import EmailTwoToneIcon from '@material-ui/icons/EmailTwoTone';
-import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import * as PhoneIcon from '@material-ui/icons/Phone';
+import * as  PlaceIcon from '@material-ui/icons/Place';
+import * as EmailTwoToneIcon from '@material-ui/icons/EmailTwoTone';
+import * as  AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import { useRouteMatch } from 'react-router';
 import { Contacts } from '@material-ui/icons';
 
 function ViewTable() {
-    // let invoiceDataList = []
-    // await db.collection('contacts').get().then((querySnapshot) => {
-    //     // snapshot.docs.forEach(doc =>
-    //     invoiceDataList = querySnapshot.docs.map(doc => doc.data())
-    //     console.log(invoiceDataList, 'inside')
-    // })
     const {
         params: { id },
     } = useRouteMatch('/viewtable/:id');
 
     console.log(id)
-    // delete the document
+
 
     const [invoiceDataList, setInvoiceDataList] = useState([])
-    // const fetchBlogs = async () => {
-    //     const response = db.collection('contacts')
-    //     const data = await response.get()
-    //     data.docs.forEach(item => {
-    //         setInvoiceDataList([...invoiceDataList, item.data()])
-    //         console.log([...invoiceDataList, item.data()])
-    //     })
-
-    // }
-    // useEffect(() => {
-    //     fetchBlogs();
-
-    // }, [])
-
-    // useEffect(() => {
-    //     const response = db.collection('contacts')
-    //     return response.onSnapshot((snapshot) => {
-    //         const postData = [];
-    //         snapshot.forEach((doc) => postData.push({ ...doc.data(), id: id }));
-    //         console.log(postData);  // <------
-    //         setInvoiceDataList(postData);
-    //     });
-    // }, []);
-
-
     const invoiceData = () => {
         db
             .collection("contacts")

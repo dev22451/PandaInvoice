@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { db } from "./firebase"
 import { useHistory } from "react-router"
-import VisibilityIcon from '@material-ui/icons/Visibility';
+import * as VisibilityIcon from '@material-ui/icons/Visibility';
 import ViewTable from './ViewTable';
 // import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight';
 
@@ -23,7 +23,7 @@ const ViewInvoice = (s) => {
         return db.collection('contacts').onSnapshot((snapshot) => {
             const postData = [];
             snapshot.forEach((doc) => postData.push({ ...doc.data(), id: doc.id }));
-              // <------
+            // <------
             setInvoiceDataList(postData);
         });
     }, []);

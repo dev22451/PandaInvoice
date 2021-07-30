@@ -1,9 +1,9 @@
-import React from 'react'
+import * as React from 'react'
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../Style.css"
-import Products from './Products'
+import * as Products from './Products'
 import { db } from './firebase'
-import Addresss from './Address';
+import * as Addresss from './Address';
 const HomePage = () => {
     return (
         <div className="container">
