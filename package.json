@@ -3,6 +3,10 @@
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
+  "engines": {
+    "node": "14.x",
+    "npm": "6.x"
+  },
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@ant-design/icons": "^4.6.2",
@@ -47,7 +51,7 @@
   ],
   "license": "0BSD",
   "scripts": {
-    "heroku-postbuild": "gatsby build",
+    "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
