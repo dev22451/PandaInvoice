@@ -1,21 +1,11 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/node-apis/
- */
-
-// You can delete this file if you're not using it
-exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
-    if (stage === "build-html" || stage === "develop-html") {
-        actions.setWebpackConfig({
-            module: {
-                rules: [
-                    {
-                        test: /bad-module/,
-                        use: loaders.null(),
-                    },
-                ],
-            },
-        })
-    }
-}
+exports.onCreateWebpackConfig = ({ stage, actions, getConfig }) => {
+    actions.setWebpackConfig({
+        externals: getConfig().externals.concat(function (context, request, callback) {
+            const regex = /^@?firebase(\/(.+))?/;
+            if (regex.test(request)) {
+                return callback(null, `umd ${request}`);
+            }
+            callback();
+        }),
+    });
+};

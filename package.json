@@ -47,7 +47,7 @@
   ],
   "license": "0BSD",
   "scripts": {
-    "heroku-postbuild": "gatsby build/index.js",
+    "heroku-postbuild": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
