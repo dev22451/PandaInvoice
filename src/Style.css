@@ -71,6 +71,7 @@ transition: box-shadow .3s;
 }
 .Billto:hover {
   box-shadow: 0 0 11px rgba(33,33,33,.2); 
+
 }
 
 
@@ -81,6 +82,14 @@ transition: box-shadow .3s;
 .buttonsize{
   height:200px;
 width: 200px;
+transition: box-shadow .3s;
+  border-radius:10px;
+  /* border: 1px solid #ccc; */
+  box-shadow: 0 0 12px 2px rgba(0 0 0 /18%);
+}
+
+.buttonsize:hover{
+ box-shadow: none;
 }
 /* .formcss{ */
   /* background-color: whitesmoke; */
