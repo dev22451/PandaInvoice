@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { db } from "./firebase"
-import * as PhoneIcon from '@material-ui/icons/Phone';
-import * as  PlaceIcon from '@material-ui/icons/Place';
-import * as EmailTwoToneIcon from '@material-ui/icons/EmailTwoTone';
-import * as  AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import PhoneIcon from '@material-ui/icons/Phone';
+import PlaceIcon from '@material-ui/icons/Place';
+import EmailTwoToneIcon from '@material-ui/icons/EmailTwoTone';
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import { useRouteMatch } from 'react-router';
 import { Contacts } from '@material-ui/icons';
 

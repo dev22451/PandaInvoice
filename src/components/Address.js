@@ -1,10 +1,10 @@
-import * as  React from 'react';
+import * as React from 'react';
 import Navbar from './Navbar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import * as InvoiceForm from './InvoiceForm';
-import * as InvoiceHomePage from './InvoiceHomePage';
-import * as ViewTable from './ViewTable'
-import * as ViewInvoice from './ViewInvoice';
+import InvoiceForm from './InvoiceForm';
+import InvoiceHomePage from './InvoiceHomePage';
+import ViewTable from './ViewTable'
+import ViewInvoice from './ViewInvoice';
 // import { PDFViewer } from '@react-pdf/renderer';
 
 function Address() {

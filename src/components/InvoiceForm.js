@@ -1,8 +1,8 @@
 import * as  React from 'react'
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../Style.css"
-import * as Products from './Products'
-import  { db } from './firebase'
+import Products from './Products'
+import { db } from './firebase'
 const InvoiceForm = () => {
     return (
         <div >

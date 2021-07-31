@@ -1,6 +1,7 @@
-import * as  firebase from 'firebase'
+import firebase from 'firebase'
 
 var firebaseApp = firebase.initializeApp({
+
     apiKey: "AIzaSyDZltCAAUgRmiU9z3guPuVXJGa38PtPXZw",
     authDomain: "pandainvoice-d245c.firebaseapp.com",
     databaseURL: "https://pandainvoice-d245c-default-rtdb.firebaseio.com",
